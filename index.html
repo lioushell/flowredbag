@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="must-revalidate,no-cache">
+    <title>攒手气流量扭蛋</title>
+    <!-- <base href="../../../../prod/static/game/flowredbag/"/> -->
+    <!--<base href="http://st.wboll.com/static/wboll_game/static/game/flowredbag/">-->
+    <!--<base href="http://getstatic.wboll.com/static/game/flowredbag/">-->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="text/javascript" src="js/hidpi-canvas.js"></script>
+    <script type="text/javascript" src="js/circleProgress.js"></script>
+</head>
+<body>
+
+    <!--===============================  红包详情 已注册  ==============================-->
+    <div id="yizhuce" class="bg mainbg4 bagdetails none">
+        <!--注册完领取流量-->
+        <div id="zhuceInfo" class="zhuce-info">
+            <!--头像信息-->
+            <span class="reg-photo"><img src="img/touxiang.png" /></span>
+            <!--个人信息-->
+            <div class="regphoto-info">
+                <h3><span class="user">梅小苏梦娜</span>的流量红包</h3>
+                <p class="zhufuyu">手机党们！给你1G随便花！</p>
+            </div>
+            <!--自己抢到的流量-->
+            <h2 class="rob-flow">恭喜您抢到<br><span class="flowCount">100M</span></h2>
+            <!--好友抢到的流量-->
+            <h2 class="friend-robflow">
+                您的好友<br>梅小苏梦娜也将获得<br><span class="flowCount">100M</span>
+            </h2>
+            <!--关闭按钮-->
+            <span class="reg-close detailClose"></span>
+        </div>
+    </div>
+
+    <!--===============================  手机充值流量首页  ==============================-->
+    <div id="redbagIndex" class="bg mainbg1 ">
+        <div class="flow1">
+            <img src="img/flow1.png" />
+            <!--我的流量红包-->
+            <span class="btn-flowbag"></span>
+            <span class="btn-question"></span>
+        </div>
+        <!--流量发红包表单-->
+        <div class="flow-form">
+            <ul>
+                <li class="count-left">
+                    <span>红包个数：</span>
+                    <input id="inputCount" class="input-count" type="tel" placeholder="填写个数" maxlength="10"/>
+                    <span class="danweiGe">个</span>
+                </li>
+                <li class="count-left">
+                    <span>合计金额：</span>
+                    <div class="total-money">￥<span id="totalMoney">0.00</span></div>
+                </li>
+                <li class="hongbao-tips hongbaotip1 none">
+                    <img class="hongbaoTip" src="img/hongbaoTip.png" />
+                </li>
+                <li class="hongbao-tips hongbaotip2 ">
+                    <span id="inputcountTip" class="inputcountTip">未领取的扭蛋将于24小时后退回至您的X币账户</span>
+                </li>
+                <li>
+                    <!--恭喜发财，大吉大利 按钮-->
+                    <input type="text" class="btnInput text-facai" value="恭喜发财，大吉大利">
+                    <!--去支付 按钮-->
+                    <button class="btnInput btn-gopay">去支付</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--===============================  红包记录页  ==============================-->
+    <div id="redbagRecord" class="bg mainbg2 none">
+        <!--关闭按钮-->
+        <span class="jilu-close"><img src="img/btn-close1.png" /></span>
+        <!--头像信息-->
+        <div class="photo-info">
+            <img class="touxiang" src="img/touxiang.png" />
+            <h3 class="nickname"><span class="user">梅晓苏梦娜</span></h3>
+            <p class="jilu-text jilu1">共发出 <span class="bagcount fa">3</span> 个流量红包</p>
+            <p class="jilu-text jilu2 none">共收到 <span class="bagcount shou">5</span> 个流量红包</p>
+        </div>
+        <!--------------发红包!-------------->
+        <div class="sendBag">
+            <div class="bag-header1">
+                <!--<img src="img/menu1.jpg" />-->
+                <!--发红包按钮-->
+                <div class="btn-send"></div>
+                <div class="btn-receive"></div>
+            </div>
+            <div class="bag-cont">
+                <ul>
+                    <li>
+                        <div class="hongbaoleft fl">
+                            <h3 class="hongbaoTitle">攒手气红包</h3>
+                            <i class="color999 sendDate">2016-1-23</i>
+                        </div>
+                        <div class="hongbaoright fr">
+                            <h3 class="hongbaoTitle"><span class="coinX"><img src="img/coinX.png" /></span> 100个</h3>
+                            <div class="color999">已领完  <span>5</span>/10个</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hongbaoleft fl">
+                            <h3 class="hongbaoTitle">攒手气红包</h3>
+                            <i class="color999 sendDate">2016-1-23</i>
+                        </div>
+                        <div class="hongbaoright fr">
+                            <h3 class="hongbaoTitle">50元</h3>
+                            <div class="color999">已领完  <span>5</span>/10个</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hongbaoleft fl">
+                            <h3 class="hongbaoTitle">攒手气红包</h3>
+                            <i class="color999 sendDate">2016-1-23</i>
+                        </div>
+                        <div class="hongbaoright fr">
+                            <h3 class="hongbaoTitle">200元</h3>
+                            <div class="color999">已领完  <span>5</span>/10个</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hongbaoleft fl">
+                            <h3 class="hongbaoTitle">攒手气红包</h3>
+                            <i class="color999 sendDate">2016-1-23</i>
+                        </div>
+                        <div class="hongbaoright fr">
+                            <h3 class="hongbaoTitle">200元</h3>
+                            <div class="color999">已领完  <span>5</span>/10个</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--------------收红包!-------------->
+        <div class="receiveBag none">
+            <div class="bag-header2">
+                <!--<img src="img/menu1.jpg" />-->
+                <!--发红包按钮-->
+                <div class="btn-send"></div>
+                <div class="btn-receive"></div>
+            </div>
+            <div class="bag-cont">
+                <ul>
+                    <li>
+                        <div class="hongbaoleft fl">
+                            <h3 class="hongbaoTitle">好友帮忙攒红包</h3>
+                            <i class="color999 sendDate">2016-1-23</i>
+                        </div>
+                        <div class="hongbaoright fr">
+                            <h3 class="hongbaoTitle">100M</h3>
+                            <div class="color999">待处理</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hongbaoleft fl">
+                            <h3 class="hongbaoTitle">自己抢到攒手气红包</h3>
+                            <i class="color999 sendDate">2016-1-23</i>
+                        </div>
+                        <div class="hongbaoright fr">
+                            <h3 class="hongbaoTitle">500M</h3>
+                            <div class="color999">已充值</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hongbaoleft fl">
+                            <h3 class="hongbaoTitle">自己抢到攒手气红包</h3>
+                            <i class="color999 sendDate">2016-1-23</i>
+                        </div>
+                        <div class="hongbaoright fr">
+                            <h3 class="hongbaoTitle">200M</h3>
+                            <div class="color999">已兑换成X币</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hongbaoleft fl">
+                            <h3 class="hongbaoTitle">好友帮忙攒红包</h3>
+                            <i class="color999 sendDate">2016-1-23</i>
+                        </div>
+                        <div class="hongbaoright fr">
+                            <h3 class="hongbaoTitle">20M</h3>
+                            <div class="color999">已充值</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hongbaoleft fl">
+                            <h3 class="hongbaoTitle">自己抢到攒手气红包</h3>
+                            <i class="color999 sendDate">2016-1-23</i>
+                        </div>
+                        <div class="hongbaoright fr">
+                            <h3 class="hongbaoTitle">200M</h3>
+                            <div class="color999">已兑换成X币</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--===============================  支付浮窗  ==============================-->
+    <div id="payFuchuang" class="bg paybg none">
+        <!--支付窗口-->
+        <section class="pay-menu">
+            <h4>支付</h4>
+            <ul class="paymethod">
+                <li id="payMethod1" style="display:none;">
+                    <!--X币支付-->
+                    <div class="pay-method1 fl">
+                        <img class="ico-coinX" src="img/ico-coinX.png" />
+                        <h3 id="methodX" class="lineh70">X币支付</h3>
+                        <span id="yueshao1" class="none" style="display:none;">（帐号余额不足）</span>
+                    </div>
+                    <div id="xbiCount" class="pay-method2 fr colord0021b">-<span id="payXbi">500</span></div>
+                </li>
+                <li id="payMethod2">
+                    <!--微信支付-->
+                    <div class="pay-method1 fl">
+                        <img class="ico-coinX" src="img/ico-wechat.png" />
+                        <h3 id="methodWechat" class="lineh70">微信支付</h3>
+                        <span id="yueshao2" class="none" style="display:none;">（帐号余额不足）</span>
+                    </div>
+                    <div id="moneyCount" class="pay-method2 fr colord0021b">￥<span id="payMoney">50</span>.00</div>
+                </li>
+            </ul>
+            <div  id="btnClose" class="btn-close"><img src="img/btn-close.png" /></div>
+        </section>
+    </div>
+
+    <!--===============================  支付成功  ==============================-->
+    <div id="paySuccess" class="bg pay-success none">
+        <!--头像-->
+        <div class="pay-photo"><img src="img/touxiang.png" /></div>
+        <!--头像信息-->
+        <div class="pay-info">
+            <h3>梅长苏梦娜的流量红包</h3>
+            <p class="zhufuyu">手机党们！给你1G随便花！</p>
+        </div>
+        <!--关闭按钮-->
+        <div class="close1"></div>
+    </div>
+
+    <!--===============================  常见问题  ==============================-->
+    <div id="question" class="bg question none">
+        <!--常见问题头部-->
+        <div class="ico-title">
+            <img src="img/question-title.jpg" />
+            <span class="returnBack"></span>
+        </div>
+        <ul class="questionText">
+            <li>
+                <h3>X任务是什么？</h3>
+                <p>X任务是由大有易数推出的基于手机流量的活动平台，数千家企业在此发布活动，为您提供丰厚的任务奖励。</p>
+            </li>
+            <li>
+                <h3>攒手气扭蛋是什么？</h3>
+                <p>猴年春节，X任务携手三大运营商推出攒手气扭蛋啦。攒手气扭蛋内含10M-1G不等的流量，每个仅售5元噢~把扭蛋送给好友，表达心意的同时，自己也能获得等值流量。</p>
+            </li>
+            <li>
+                <h3>好友没领的扭蛋去哪了？</h3>
+                <p>如果您的好友24小时内没有拆开扭蛋，我们将把扭蛋以X币的形式退回到您的X币账户中。</p>
+            </li>
+            <li>
+                <h3>X币是什么？</h3>
+                <p>您在X任务完成企业的指定任务，获得的奖励为X币。目前，我们开通了X币兑换全国三网手机流量的服务，日后您可以使用X币兑换更多服务。</p>
+            </li>
+            <li>
+                <h3>拆扭蛋为什么要验证我的手机号？</h3>
+                <p>验证了您的手机号，我们才能为您充值对应运营商的流量啊^_^</p>
+            </li>
+            <li>
+                <h3>春节抢了许多扭蛋，流量用不完怎么办？</h3>
+                <p>您可以点击“流量充值”，选择“兑换成X币”，兑换后的X币会安心地躺在您的账户中。在您需要手机流量的时候，可以使用X币购买流量。</p>
+            </li>
+            <li>
+                <h3>获得的优惠券怎么使用？</h3>
+                <div>
+                    <b>本来生活</b>
+                    <p>1.购买用户需注册本来生活网账号，即可下单购买。活动期间，每个账户限参与一次。</p>
+                    <p>2.老客户需凑单69元，才可享受包邮。</p>
+                    <p>3.本活动仅限北京、天津城市用户参与，请在有效期内使用，逾期作废。</p>
+                    <p>4.此活动只针对普通消费者，一经发现非正常下单行为，本来生活网有权取消活动资格。</p>
+                    <br/>
+                </div>
+                <div>
+                    <b>国美在线</b>
+                    <p>1.获取方式：用户点击优惠劵链接获取。其中，国美海外购老用户点击链接后，优惠劵将自动存入其账户；新用户点击连接后需要注册成为会员，之后优惠劵也将存入用户账户中；</p>
+                    <p>2.优惠劵仅限在国美海外购PC端进行使用，不可叠加使用；</p>
+                    <p>3.优惠劵有效期：活动之日起至2016年2月29日。</p>
+                    <br/>
+                </div>
+                <div>
+                    <b>百度外卖</b>
+                    <p>1.下载百度外卖APP，用手机号注册或将手机号绑定至已注册的百度外卖账户后方可使用。</p>
+                    <p>2.使用优惠时的下单手机号需与领取优惠时的手机号一致，领取后在有效期内使用。</p>
+                    <p>3.优惠劵有效期：活动之日起至2016年2月29日。</p>
+                    <p>4.在法律法规许可范围内，百度外卖对本活动拥有解释权。如有问题，请联系百度外卖客服：400-011-7777。</p>
+                    <br/>
+                </div>
+                <div>
+                    <b>北京联通</b>
+                    <p>1.在北京联通网上营业厅和手机营业厅下单购买合约终端，可抵扣现金，在原订单金额最基础上直减代金券金额。</p>
+                    <p>2.该代金券可用于购买最终售价在300元以上的合约机使用；可叠加于折扣终端和分期付款终端；不可用于购买非定制终端。</p>
+                    <p>3.新老用户均可使用该代金券。</p>
+                    <p>4.一个证件下只可使用一次代金券。</p>
+                    <p>5.代金券使用有效期至2016年3月31日。</p>
+                </div>
+            </li>
+        </ul>
+        <div class="footerZixun">
+            <p>遇到问题？</p>
+            <p>关注“X任务”即刻为您解决！</p>
+        </div>
+    </div>
+
+    <!--===============================  失败异常信息  ==============================-->
+    <div class="bg errorbg none">
+        <!--显示异常文本信息-->
+        <div class="unusualText">
+            <p id="indexErrorText">活动太热门<br/>
+                陛下，请喝口水再来试试吧！
+            </p>
+        </div>
+        <!-- <span class="btnReturnDetail"><img src="img/btn-returnDetail.png" /></span> -->
+    </div>
+
+</body>
+</html>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/main.js" charset="utf-8"></script>
+<!--<script type="text/javascript" src="js/index.js" charset="utf-8"></script>-->
+<script>
+    /*向好友讨红包 按钮*/
+    $('.btn-question').on('touchstart',function(){
+        $("#question").show();
+    });
+</script>
